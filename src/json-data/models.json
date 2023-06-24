@@ -1,0 +1,326 @@
+{
+    "models": [
+        {
+            "id": 324,
+            "title": "Segment Anything",
+            "slug": "segment-anything",
+            "owner": {
+                "imageUrl": "https://storage.googleapis.com/kaggle-organizations/3837/thumbnail.png",
+                "name": "Meta AI",
+                "userTier": "STAFF"
+            },
+            "subtitle": "Segment Anything Model (SAM) is a promptable segmentation system with zero-shot generalization to unfamiliar objects and images, without the need for additional training.",
+            "fullUrl": "/models/metaresearch/segment-anything",
+            "voteCount": 159,
+            "isAlreadyVotedUp": false,
+            "notebookCount": 19,
+            "categories": {
+                "tags": [
+                    {
+                        "id": 16717,
+                        "name": "image segmentation",
+                        "fullPath": "task \u003E image-segmentation",
+                        "listingUrl": "/models?task=16717",
+                        "description": "",
+                        "datasetCount": 140,
+                        "competitionCount": 2,
+                        "notebookCount": 86,
+                        "tagUrl": "/tags/image-segmentation",
+                        "displayName": "Image Segmentation",
+                        "googleMaterialIcon": "compare",
+                        "modelCount": 18
+                    },
+                    {
+                        "id": 14102,
+                        "name": "image",
+                        "fullPath": "data type \u003E image",
+                        "listingUrl": "/models?datatype=14102",
+                        "datasetCount": 5438,
+                        "competitionCount": 211,
+                        "notebookCount": 5002,
+                        "tagUrl": "/tags/image-data",
+                        "displayName": "Image",
+                        "modelCount": 188
+                    }
+                ],
+                "type": "TAG_TYPE_MODEL"
+            },
+            "instanceCount": 3
+        },
+        {
+            "id": 322,
+            "title": "LoFTR",
+            "slug": "loftr",
+            "owner": {
+                "imageUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "name": "Jiaming Sun"
+            },
+            "subtitle": "LoFTR: Detector-Free Local Feature Matching with Transformers",
+            "fullUrl": "/models/jiamingsuen/loftr",
+            "voteCount": 73,
+            "isAlreadyVotedUp": false,
+            "notebookCount": 12,
+            "categories": {
+                "tags": [
+                    {
+                        "id": 16694,
+                        "name": "feature extraction",
+                        "fullPath": "task \u003E feature-extraction",
+                        "listingUrl": "/models?task=16694",
+                        "description": "",
+                        "datasetCount": 48,
+                        "notebookCount": 96,
+                        "tagUrl": "/tags/feature-extraction",
+                        "displayName": "Feature Extraction",
+                        "googleMaterialIcon": "remove_selection",
+                        "modelCount": 3
+                    }
+                ],
+                "type": "TAG_TYPE_MODEL"
+            },
+            "instanceCount": 3
+        },
+        {
+            "id": 323,
+            "title": "DISK",
+            "slug": "disk",
+            "owner": {
+                "imageUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1644632-fb.jpg",
+                "name": "Micha\u0142 Tyszkiewicz"
+            },
+            "subtitle": "DISK: Learning local features with policy gradient",
+            "fullUrl": "/models/jatentaki/disk",
+            "voteCount": 35,
+            "isAlreadyVotedUp": false,
+            "notebookCount": 7,
+            "categories": {
+                "tags": [
+                    {
+                        "id": 16694,
+                        "name": "feature extraction",
+                        "fullPath": "task \u003E feature-extraction",
+                        "listingUrl": "/models?task=16694",
+                        "description": "",
+                        "datasetCount": 48,
+                        "notebookCount": 96,
+                        "tagUrl": "/tags/feature-extraction",
+                        "displayName": "Feature Extraction",
+                        "googleMaterialIcon": "remove_selection",
+                        "modelCount": 3
+                    }
+                ],
+                "type": "TAG_TYPE_MODEL"
+            },
+            "instanceCount": 2
+        },
+        {
+            "id": 312,
+            "title": "EfficientNet",
+            "slug": "tf-efficientnet",
+            "owner": {
+                "imageUrl": "https://storage.googleapis.com/kaggle-organizations/3832/thumbnail.png",
+                "name": "TIMM",
+                "userTier": "STAFF"
+            },
+            "subtitle": "EfficientNet is a convolutional neural network architecture and scaling method that uniformly scales all dimensions of depth/width/resolution using a compound coefficient.",
+            "fullUrl": "/models/timm/tf-efficientnet",
+            "voteCount": 80,
+            "isAlreadyVotedUp": false,
+            "notebookCount": 16,
+            "categories": {
+                "tags": [
+                    {
+                        "id": 17092,
+                        "name": "convolution",
+                        "fullPath": "architecture \u003E convolution",
+                        "listingUrl": "/models?query=convolution",
+                        "description": "",
+                        "datasetCount": 5,
+                        "notebookCount": 16,
+                        "tagUrl": "/tags/convolution",
+                        "displayName": "Convolution",
+                        "modelCount": 9
+                    },
+                    {
+                        "id": 16686,
+                        "name": "image classification",
+                        "fullPath": "task \u003E image-classification",
+                        "listingUrl": "/models?task=16686",
+                        "description": "",
+                        "datasetCount": 337,
+                        "competitionCount": 1,
+                        "notebookCount": 409,
+                        "tagUrl": "/tags/image-classification",
+                        "displayName": "Image Classification",
+                        "googleMaterialIcon": "image_search",
+                        "modelCount": 81
+                    }
+                ],
+                "type": "TAG_TYPE_MODEL"
+            },
+            "instanceCount": 13
+        },
+        {
+            "id": 134,
+            "title": "movenet",
+            "slug": "movenet",
+            "owner": {
+                "imageUrl": "https://storage.googleapis.com/kaggle-organizations/855/thumbnail.png?r=854",
+                "name": "Google",
+                "userTier": "STAFF"
+            },
+            "subtitle": "A convolutional neural network model that runs on RGB images and predicts humanjoint locations of a single person.",
+            "fullUrl": "/models/google/movenet",
+            "voteCount": 58,
+            "isAlreadyVotedUp": false,
+            "notebookCount": 4,
+            "categories": {
+                "tags": [
+                    {
+                        "id": 16713,
+                        "name": "pose detection",
+                        "fullPath": "task \u003E pose-detection",
+                        "listingUrl": "/models?task=16713",
+                        "description": "",
+                        "datasetCount": 5,
+                        "notebookCount": 7,
+                        "tagUrl": "/tags/pose-detection",
+                        "displayName": "Pose Detection",
+                        "googleMaterialIcon": "directions_run",
+                        "modelCount": 6
+                    },
+                    {
+                        "id": 16895,
+                        "name": "english",
+                        "fullPath": "language \u003E english",
+                        "listingUrl": "/models?lang=16895",
+                        "description": "",
+                        "datasetCount": 673,
+                        "notebookCount": 223,
+                        "tagUrl": "/tags/english",
+                        "displayName": "English",
+                        "modelCount": 81
+                    },
+                    {
+                        "id": 16782,
+                        "name": "mobilenet v2",
+                        "fullPath": "architecture \u003E mobilenet-v2",
+                        "listingUrl": "/models?query=mobilenet\u002Bv2",
+                        "description": "",
+                        "datasetCount": 2,
+                        "notebookCount": 21,
+                        "tagUrl": "/tags/mobilenet-v2",
+                        "displayName": "MobileNet V2",
+                        "modelCount": 9
+                    },
+                    {
+                        "id": 14102,
+                        "name": "image",
+                        "fullPath": "data type \u003E image",
+                        "listingUrl": "/models?datatype=14102",
+                        "datasetCount": 5438,
+                        "competitionCount": 211,
+                        "notebookCount": 5002,
+                        "tagUrl": "/tags/image-data",
+                        "displayName": "Image",
+                        "modelCount": 188
+                    }
+                ],
+                "type": "TAG_TYPE_MODEL"
+            },
+            "instanceCount": 13
+        },
+        {
+            "id": 65,
+            "title": "handpose_3d",
+            "slug": "handpose-3d",
+            "owner": {
+                "imageUrl": "https://storage.googleapis.com/kaggle-organizations/3815/thumbnail.png",
+                "name": "MediaPipe",
+                "userTier": "STAFF"
+            },
+            "subtitle": "Detect hand poses in an image.",
+            "fullUrl": "/models/mediapipe/handpose-3d",
+            "voteCount": 11,
+            "isAlreadyVotedUp": false,
+            "notebookCount": 0,
+            "categories": {
+                "tags": [
+                    {
+                        "id": 16713,
+                        "name": "pose detection",
+                        "fullPath": "task \u003E pose-detection",
+                        "listingUrl": "/models?task=16713",
+                        "description": "",
+                        "datasetCount": 5,
+                        "notebookCount": 7,
+                        "tagUrl": "/tags/pose-detection",
+                        "displayName": "Pose Detection",
+                        "googleMaterialIcon": "directions_run",
+                        "modelCount": 6
+                    },
+                    {
+                        "id": 14102,
+                        "name": "image",
+                        "fullPath": "data type \u003E image",
+                        "listingUrl": "/models?datatype=14102",
+                        "datasetCount": 5438,
+                        "competitionCount": 211,
+                        "notebookCount": 5002,
+                        "tagUrl": "/tags/image-data",
+                        "displayName": "Image",
+                        "modelCount": 188
+                    }
+                ],
+                "type": "TAG_TYPE_MODEL"
+            },
+            "instanceCount": 4
+        },
+        {
+            "id": 213,
+            "title": "posenet/resnet50",
+            "slug": "posenet-resnet50",
+            "owner": {
+                "imageUrl": "https://storage.googleapis.com/kaggle-organizations/1099/thumbnail.png?r=980",
+                "name": "TensorFlow",
+                "userTier": "STAFF"
+            },
+            "subtitle": "PoseNet model for pose estimation.",
+            "fullUrl": "/models/tensorflow/posenet-resnet50",
+            "voteCount": 6,
+            "isAlreadyVotedUp": false,
+            "notebookCount": 1,
+            "categories": {
+                "tags": [
+                    {
+                        "id": 16713,
+                        "name": "pose detection",
+                        "fullPath": "task \u003E pose-detection",
+                        "listingUrl": "/models?task=16713",
+                        "description": "",
+                        "datasetCount": 5,
+                        "notebookCount": 7,
+                        "tagUrl": "/tags/pose-detection",
+                        "displayName": "Pose Detection",
+                        "googleMaterialIcon": "directions_run",
+                        "modelCount": 6
+                    },
+                    {
+                        "id": 14102,
+                        "name": "image",
+                        "fullPath": "data type \u003E image",
+                        "listingUrl": "/models?datatype=14102",
+                        "datasetCount": 5438,
+                        "competitionCount": 211,
+                        "notebookCount": 5002,
+                        "tagUrl": "/tags/image-data",
+                        "displayName": "Image",
+                        "modelCount": 188
+                    }
+                ],
+                "type": "TAG_TYPE_MODEL"
+            },
+            "instanceCount": 3
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+<div class="main">
+    <div class="model-title-block">
+        <div>
+            <label class="model-title">Models</label>
+            <p class="desc-wrap">
+                Search and discover hundreds of trained, ready-to-deploy machine learning models in one place.
+            </p>
+        </div>
+        <div>
+            <img src="./../../../assets//images/Model-img.png" alt="Model Img">
+        </div>
+    </div>
+    <div id="stickySearchBar" class="search-block">
+        <input class="search" type="text" name="search" [(ngModel)]="search" placeholder="Search Models"
+            (ngModelChange)="searchModel()">
+    </div>
+    <div class="trending-block">
+        <div class="trending-label">
+            <label>Trending Models</label>
+        </div>
+        <div class="card-view">
+            <select class="filter-ddl" name="filter">
+                <option>Most Votes</option>
+                <option>Hotness</option>
+                <option>Most Downloads</option>
+            </select>
+            <div>
+                <a class="list-icon" href="javascript:void(0);" (click)="changeView('list')">
+                    <i class="fa-solid fa-list"></i>
+                </a>
+                <a class="square-icon" href="javascript:void(0);" (click)="changeView('block')">
+                    <i class="fa-solid fa-table"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="cards-block" *ngIf="cardView">
+        <card></card>
+        <card></card>
+    </div>
+    <div *ngIf="!cardView">
+        <card [defaultView]="false"></card>
+        <card [defaultView]="false"></card>
+        <card [defaultView]="false"></card>
+        <card [defaultView]="false"></card>
+        <card [defaultView]="false"></card>
+        <card [defaultView]="false"></card>
+        <card [defaultView]="false"></card>
+        <card [defaultView]="false"></card>
+        <card [defaultView]="false"></card>
+    </div>
+
+</div>

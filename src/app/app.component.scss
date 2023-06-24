@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.wrapper .sidebar{
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    // padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.container{
+    display: flex;
+    margin-left: 225px;
+    padding: 10px 20px;
+    transition: all 0.5s ease;
+}
+
+
+
+
+
+
+
+

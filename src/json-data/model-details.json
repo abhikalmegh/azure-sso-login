@@ -1,0 +1,363 @@
+{
+    "id": 324,
+    "slug": "segment-anything",
+    "owner": {
+        "id": 3837,
+        "imageUrl": "https://storage.googleapis.com/kaggle-organizations/3837/thumbnail.png",
+        "isOrganization": true,
+        "name": "Meta AI",
+        "profileUrl": "/metaresearch",
+        "slug": "metaresearch",
+        "userTier": "STAFF"
+    },
+    "description": "**[Meta AI Research, FAIR](https://ai.facebook.com/research/)**\n\n[Alexander Kirillov](https://alexander-kirillov.github.io/), [Eric Mintun](https://ericmintun.github.io/), [Nikhila Ravi](https://nikhilaravi.com/), [Hanzi Mao](https://hanzimao.me/), Chloe Rolland, Laura Gustafson, [Tete Xiao](https://tetexiao.com), [Spencer Whitehead](https://www.spencerwhitehead.com/), Alex Berg, Wan-Yen Lo, [Piotr Dollar](https://pdollar.github.io/), [Ross Girshick](https://www.rossgirshick.info/)\n\n[[\u0060Paper\u0060](https://ai.facebook.com/research/publications/segment-anything/)] [[\u0060Project\u0060](https://segment-anything.com/)] [[\u0060Demo\u0060](https://segment-anything.com/demo)] [[\u0060Dataset\u0060](https://segment-anything.com/dataset/index.html)] [[\u0060Blog\u0060](https://ai.facebook.com/blog/segment-anything-foundation-model-image-segmentation/)]\n\n![SAM design](https://www.googleapis.com/download/storage/v1/b/kaggle-user-content/o/inbox%2F1984530%2Ffea8d4e6e4c459c20bfdb0736f67d252%2Fmodel_diagram.png?generation=1681333648162923\u0026alt=media)\n\nThe **Segment Anything Model (SAM)** produces high quality object masks from input prompts such as points or boxes, and it can be used to generate masks for all objects in an image. It has been trained on a [dataset](https://segment-anything.com/dataset/index.html) of 11 million images and 1.1 billion masks, and has strong zero-shot performance on a variety of segmentation tasks.\n\n\u003Cp\u003E\n  \u003Cimg src=\u0022https://www.googleapis.com/download/storage/v1/b/kaggle-user-content/o/inbox%2F1984530%2Fa10fee953b439c61f959489bb91b753c%2Fmasks1.png?generation=1681333518372152\u0026alt=media\u0022 width=\u002237.25%\u0022\u003E\n  \u003Cimg src=\u0022https://www.googleapis.com/download/storage/v1/b/kaggle-user-content/o/inbox%2F1984530%2Facd6b6f6c648bb97dce91305a4afe583%2Fmasks2.jpg?generation=1681333629754155\u0026alt=media\u0022 width=\u002261.5%\u0022\u003E \n\u003C/p\u003E\n\n## Contributors\n\nThe Segment Anything project was made possible with the help of many contributors (alphabetical):\n\nAaron Adcock, Vaibhav Aggarwal, Morteza Behrooz, Cheng-Yang Fu, Ashley Gabriel, Ahuva Goldstand, Allen Goodman, Sumanth Gurram, Jiabo Hu, Somya Jain, Devansh Kukreja, Robert Kuo, Joshua Lane, Yanghao Li, Lilian Luong, Jitendra Malik, Mallika Malhotra, William Ngan, Omkar Parkhi, Nikhil Raina, Dirk Rowe, Neil Sejoor, Vanessa Stark, Bala Varadarajan, Bram Wasti, Zachary Winstrom\n\n## Citing Segment Anything\n\nIf you use SAM or SA-1B in your research, please use the following BibTeX entry.\n\n\u0060\u0060\u0060\n@article{kirillov2023segany,\n  title={Segment Anything},\n  author={Kirillov, Alexander and Mintun, Eric and Ravi, Nikhila and Mao, Hanzi and Rolland, Chloe and Gustafson, Laura and Xiao, Tete and Whitehead, Spencer and Berg, Alexander C. and Lo, Wan-Yen and Doll{\\\u0027a}r, Piotr and Girshick, Ross},\n  journal={arXiv:2304.02643},\n  year={2023}\n}\n\u0060\u0060\u0060",
+    "instances": [
+        {
+            "id": 2749,
+            "ownerSlug": "metaresearch",
+            "modelSlug": "segment-anything",
+            "slug": "vit-b",
+            "versionId": 3848,
+            "fineTunable": false,
+            "overview": "ViT-B is the smallest variation with 91M parameters",
+            "usage": "Install Segment Anything:\n\u0060\u0060\u0060\npip install git\u002Bhttps://github.com/facebookresearch/segment-anything.git\n\u0060\u0060\u0060\n\nGet masks from a given prompt:\n\n\u0060\u0060\u0060\nfrom segment_anything import SamPredictor, sam_model_registry\nsam = sam_model_registry[\u0022vit-b\u0022](checkpoint=\u0022/kaggle/input/segment-anything/pytorch/vit-b/1/model.pth\u0022)\npredictor = SamPredictor(sam)\npredictor.set_image(\u0026lt;your_image\u0026gt;)\nmasks, _, _ = predictor.predict(\u0026lt;input_prompts\u0026gt;)\n\u0060\u0060\u0060\n\nOr generate masks for an entire image:\n\n\u0060\u0060\u0060\nfrom segment_anything import SamAutomaticMaskGenerator, sam_model_registry\nsam = sam_model_registry[\u0022vit-b\u0022](checkpoint=\u0022/kaggle/input/segment-anything/pytorch/vit-b/1/model.pth\u0022)\nmask_generator = SamAutomaticMaskGenerator(sam)\nmasks = mask_generator.generate(\u0026lt;your_image\u0026gt;)\n\u0060\u0060\u0060",
+            "sourceUrl": "https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth",
+            "versionNumber": 1,
+            "framework": "MODEL_FRAMEWORK_PY_TORCH",
+            "downloadUrl": "/models/metaresearch/segment-anything/frameworks/PyTorch/variations/vit-b/versions/1/download",
+            "databundleVersionId": 5450575,
+            "lastVersionId": 3848,
+            "license": {
+                "id": 30,
+                "name": "Apache 2.0",
+                "url": "https://www.apache.org/licenses/LICENSE-2.0"
+            }
+        },
+        {
+            "id": 2750,
+            "ownerSlug": "metaresearch",
+            "modelSlug": "segment-anything",
+            "slug": "vit-h",
+            "versionId": 3849,
+            "fineTunable": false,
+            "overview": "ViT-H is the largest variation with 636M parameters",
+            "usage": "Install Segment Anything:\n\u0060\u0060\u0060\npip install git\u002Bhttps://github.com/facebookresearch/segment-anything.git\n\u0060\u0060\u0060\n\nGet masks from a given prompt:\n\n\u0060\u0060\u0060\nfrom segment_anything import SamPredictor, sam_model_registry\nsam = sam_model_registry[\u0022vit-h\u0022](checkpoint=\u0022/kaggle/input/segment-anything/pytorch/vit-h/1/model.pth\u0022)\npredictor = SamPredictor(sam)\npredictor.set_image(\u0026lt;your_image\u0026gt;)\nmasks, _, _ = predictor.predict(\u0026lt;input_prompts\u0026gt;)\n\u0060\u0060\u0060\n\nOr generate masks for an entire image:\n\n\u0060\u0060\u0060\nfrom segment_anything import SamAutomaticMaskGenerator, sam_model_registry\nsam = sam_model_registry[\u0022vit-h\u0022](checkpoint=\u0022/kaggle/input/segment-anything/pytorch/vit-h/1/model.pth\u0022)\nmask_generator = SamAutomaticMaskGenerator(sam)\nmasks = mask_generator.generate(\u0026lt;your_image\u0026gt;)\n\u0060\u0060\u0060",
+            "sourceUrl": "https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth",
+            "versionNumber": 1,
+            "framework": "MODEL_FRAMEWORK_PY_TORCH",
+            "downloadUrl": "/models/metaresearch/segment-anything/frameworks/PyTorch/variations/vit-h/versions/1/download",
+            "databundleVersionId": 5450592,
+            "lastVersionId": 3849,
+            "license": {
+                "id": 30,
+                "name": "Apache 2.0",
+                "url": "https://www.apache.org/licenses/LICENSE-2.0"
+            }
+        },
+        {
+            "id": 2751,
+            "ownerSlug": "metaresearch",
+            "modelSlug": "segment-anything",
+            "slug": "vit-l",
+            "versionId": 3850,
+            "fineTunable": false,
+            "overview": "ViT-L has 308M parameters",
+            "usage": "Install Segment Anything:\n\u0060\u0060\u0060\npip install git\u002Bhttps://github.com/facebookresearch/segment-anything.git\n\u0060\u0060\u0060\n\nGet masks from a given prompt:\n\n\u0060\u0060\u0060\nfrom segment_anything import SamPredictor, sam_model_registry\nsam = sam_model_registry[\u0022vit-l\u0022](checkpoint=\u0022/kaggle/input/segment-anything/pytorch/vit-l/1/model.pth\u0022)\npredictor = SamPredictor(sam)\npredictor.set_image(\u0026lt;your_image\u0026gt;)\nmasks, _, _ = predictor.predict(\u0026lt;input_prompts\u0026gt;)\n\u0060\u0060\u0060\n\nOr generate masks for an entire image:\n\n\u0060\u0060\u0060\nfrom segment_anything import SamAutomaticMaskGenerator, sam_model_registry\nsam = sam_model_registry[\u0022vit-l\u0022](checkpoint=\u0022/kaggle/input/segment-anything/pytorch/vit-l/1/model.pth\u0022)\nmask_generator = SamAutomaticMaskGenerator(sam)\nmasks = mask_generator.generate(\u0026lt;your_image\u0026gt;)\n\u0060\u0060\u0060",
+            "sourceUrl": "https://dl.fbaipublicfiles.com/segment_anything/sam_vit_l_0b3195.pth",
+            "versionNumber": 1,
+            "framework": "MODEL_FRAMEWORK_PY_TORCH",
+            "downloadUrl": "/models/metaresearch/segment-anything/frameworks/PyTorch/variations/vit-l/versions/1/download",
+            "databundleVersionId": 5450601,
+            "lastVersionId": 3850,
+            "license": {
+                "id": 30,
+                "name": "Apache 2.0",
+                "url": "https://www.apache.org/licenses/LICENSE-2.0"
+            }
+        }
+    ],
+    "activitySummary": {
+        "id": 324,
+        "schemaVersion": 1,
+        "generatedDate": "2023-06-09T10:58:24.058455Z",
+        "modelStats": [
+            {
+                "name": "Views",
+                "value": 14766
+            },
+            {
+                "name": "Downloads",
+                "value": 174
+            },
+            {
+                "name": "Download per view ratio",
+                "value": 0.011783827712312069
+            },
+            {
+                "name": "Total unique contributors",
+                "value": 16
+            }
+        ],
+        "kernelStats": [
+            {
+                "name": "Notebooks",
+                "value": 19
+            },
+            {
+                "name": "Notebook Comments",
+                "value": 16
+            },
+            {
+                "name": "Upvote per Notebook Ratio",
+                "value": 6.315789473684211
+            },
+            {
+                "name": "Notebook Upvotes",
+                "value": 120
+            }
+        ],
+        "discussionStats": [
+            {
+                "name": "Topics",
+                "value": 3
+            },
+            {
+                "name": "Total comments",
+                "value": 6
+            },
+            {
+                "name": "Upvote per post ratio",
+                "value": 0.6666666666666666
+            },
+            {
+                "name": "Discussion upvotes",
+                "value": 4
+            }
+        ],
+        "topContributors": [
+            {
+                "displayName": "Mrinal Mathur",
+                "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1224089-kg.jpeg",
+                "url": "/mrinalmathur",
+                "tier": "CONTRIBUTOR",
+                "id": 1224089
+            },
+            {
+                "displayName": "Dan Presil",
+                "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2857300-kg.png",
+                "url": "/danpresil1",
+                "tier": "EXPERT",
+                "id": 2857300
+            },
+            {
+                "displayName": "stpete_ishii",
+                "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2648923-gr.jpg",
+                "url": "/stpeteishii",
+                "tier": "EXPERT",
+                "id": 2648923
+            }
+        ],
+        "timeSeries": {
+            "downloads": {
+                "key": "downloads",
+                "title": "Downloads",
+                "points": [
+                    {
+                        "date": "2023-05-04T00:00:00Z",
+                        "count": 1
+                    }
+                ]
+            },
+            "views": {
+                "key": "views",
+                "title": "Views",
+                "points": [
+                    {
+                        "date": "2023-04-12T00:00:00Z",
+                        "count": 26
+                    }
+                ]
+            }
+        }
+    },
+    "provenanceSources": "https://github.com/facebookresearch/segment-anything",
+    "categories": {
+        "tags": [
+            {
+                "id": 14102,
+                "name": "image",
+                "fullPath": "data type \u003E image",
+                "listingUrl": "/models?datatype=14102",
+                "datasetCount": 5438,
+                "competitionCount": 211,
+                "notebookCount": 5002,
+                "displayName": "Image",
+                "modelCount": 188
+            },
+            {
+                "id": 16717,
+                "name": "image segmentation",
+                "fullPath": "task \u003E image-segmentation",
+                "listingUrl": "/models?task=16717",
+                "description": "",
+                "datasetCount": 140,
+                "competitionCount": 2,
+                "notebookCount": 86,
+                "displayName": "Image Segmentation",
+                "modelCount": 18
+            }
+        ],
+        "type": "TAG_TYPE_MODEL"
+    },
+    "versionId": 324,
+    "frameworks": [
+        "MODEL_FRAMEWORK_PY_TORCH"
+    ],
+    "lastVersionId": 324,
+    "collaboratorList": {
+        "owner": {
+            "groupId": 3837,
+            "groupMemberCount": 3,
+            "profileUrl": "/metaresearch",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-organizations/3837/thumbnail.png",
+            "name": "Meta AI",
+            "slug": "metaresearch",
+            "userTier": "STAFF",
+            "type": "OWNER"
+        }
+    },
+    "usabilitySubscores": {
+        "score": 1,
+        "licenseScore": 1,
+        "documentationScore": 1,
+        "provenanceScore": 1,
+        "publicKernelScore": 1,
+        "subtitleScore": 1,
+        "tagScore": 1
+    },
+    "licenseGroups": [
+        {
+            "id": 1,
+            "name": "Creative Commons",
+            "licenses": [
+                {
+                    "id": 1,
+                    "name": "CC0: Public Domain",
+                    "description": "CC0: Public Domain \u003Ca href=\u0022https://creativecommons.org/publicdomain/zero/1.0/\u0022 target=\u0022_blank\u0022\u003E\u003Cspan class=\u0022fa fa-info-circle\u0022/\u003E\u003C/a\u003E",
+                    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+                    "displaySequence": 1
+                },
+                {
+                    "id": 3,
+                    "name": "CC BY-NC-SA 4.0",
+                    "description": "CC BY-NC-SA 4.0 \u003Ca href=\u0022https://creativecommons.org/licenses/by-nc-sa/4.0/\u0022 target=\u0022_blank\u0022\u003E\u003Cspan class=\u0022fa fa-info-circle\u0022/\u003E\u003C/a\u003E",
+                    "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+                    "displaySequence": 2
+                },
+                {
+                    "id": 8,
+                    "name": "CC BY-SA 4.0",
+                    "description": "CC BY-SA 4.0 \u003Ca href=\u0022https://creativecommons.org/licenses/by-sa/4.0/\u0022 target=\u0022_blank\u0022\u003E\u003Cspan class=\u0022fa fa-info-circle\u0022/\u003E\u003C/a\u003E",
+                    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                    "displaySequence": 3
+                }
+            ],
+            "displaySequence": 1
+        },
+        {
+            "id": 2,
+            "name": "GPL",
+            "licenses": [
+                {
+                    "id": 9,
+                    "name": "GPL 2",
+                    "description": "GPL 2 \u003Ca href=\u0022http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html\u0022 target=\u0022_blank\u0022\u003E\u003Cspan class=\u0022fa fa-info-circle\u0022/\u003E\u003C/a\u003E",
+                    "url": "http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html",
+                    "displaySequence": 1
+                },
+                {
+                    "id": 25,
+                    "name": "GNU Lesser General Public License 3.0",
+                    "description": "LGPL 3.0 \u003Ca href=\u0022http://www.gnu.org/licenses/lgpl-3.0.html\u0022 target=\u0022_blank\u0022\u003E\u003Cspan class=\u0022fa fa-info-circle\u0022/\u003E\u003C/a\u003E",
+                    "url": "http://www.gnu.org/licenses/lgpl-3.0.html",
+                    "displaySequence": 2
+                }
+            ],
+            "displaySequence": 2
+        },
+        {
+            "id": 3,
+            "name": "Open Data Commons",
+            "licenses": [
+                {
+                    "id": 15,
+                    "name": "ODC Public Domain Dedication and Licence (PDDL)",
+                    "description": "PDDL  \u003Ca href=\u0022https://opendatacommons.org/licenses/pddl/1.0/\u0022 target=\u0022_blank\u0022\u003E\u003Cspan class=\u0022fa fa-info-circle\u0022/\u003E\u003C/a\u003E",
+                    "url": "https://opendatacommons.org/licenses/pddl/1.0/",
+                    "displaySequence": 3
+                },
+                {
+                    "id": 24,
+                    "name": "ODC Attribution License (ODC-By)",
+                    "description": "ODC-BY 1.0 \u003Ca href=\u0022https://opendatacommons.org/licenses/by/1-0/index.html\u0022 target=\u0022_blank\u0022\u003E\u003Cspan class=\u0022fa fa-info-circle\u0022/\u003E\u003C/a\u003E",
+                    "url": "https://opendatacommons.org/licenses/by/1-0/index.html",
+                    "displaySequence": 4
+                },
+                {
+                    "id": 31,
+                    "name": "MIT",
+                    "description": "MIT \u003Ca href=\u0022https://www.mit.edu/~amini/LICENSE.md\u0022 target=\u0022_blank\u0022\u003E\u003Cspan class=\u0022fa fa-info-circle\u0022/\u003E\u003C/a\u003E",
+                    "url": "https://www.mit.edu/~amini/LICENSE.md",
+                    "displaySequence": 6
+                }
+            ],
+            "displaySequence": 3
+        },
+        {
+            "id": 6,
+            "name": "Community Data License",
+            "licenses": [
+                {
+                    "id": 20,
+                    "name": "Community Data License Agreement - Permissive - Version 1.0",
+                    "description": "CDLA Permissive 1.0 \u003Ca href=\u0022https://cdla.io/permissive-1-0/\u0022 target=\u0022_blank\u0022\u003E\u003Cspan class=\u0022fa fa-info-circle\u0022/\u003E\u003C/a\u003E",
+                    "url": "https://cdla.io/permissive-1-0/",
+                    "displaySequence": 1
+                },
+                {
+                    "id": 21,
+                    "name": "Community Data License Agreement - Sharing - Version 1.0",
+                    "description": "CDLA Sharing 1.0 \u003Ca href=\u0022https://cdla.io/sharing-1-0/\u0022 target=\u0022_blank\u0022\u003E\u003Cspan class=\u0022fa fa-info-circle\u0022/\u003E\u003C/a\u003E",
+                    "url": "https://cdla.io/sharing-1-0/",
+                    "displaySequence": 2
+                }
+            ],
+            "displaySequence": 4
+        },
+        {
+            "id": 4,
+            "name": "Special",
+            "displaySequence": 5
+        },
+        {
+            "id": 5,
+            "name": "Other",
+            "licenses": [
+                {
+                    "id": 32,
+                    "name": "BSD-3-Clause",
+                    "description": "BSD-3-Clause \u003Ca href=\u0022https://opensource.org/licenses/BSD-3-Clause\u0022 target=\u0022_blank\u0022\u003E\u003Cspan class=\u0022fa fa-info-circle\u0022/\u003E\u003C/a\u003E",
+                    "url": "https://opensource.org/licenses/BSD-3-Clause",
+                    "displaySequence": 2
+                },
+                {
+                    "id": 12,
+                    "name": "Other (specified in description)",
+                    "description": "Other (specified in description)",
+                    "displaySequence": 4
+                }
+            ],
+            "displaySequence": 6
+        }
+    ]
+}

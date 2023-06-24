@@ -1,0 +1,31 @@
+<ng-container *ngIf="defaultView; else otherView">
+    <div class="card-box">
+        <div class="card-box-header">Model Name </div>
+        <div class="card-box-body">
+            <p>
+                Search and discover hundreds of trained, ready-to-deploy machine learning models in one place.
+                Search and discover hundreds of trained, ready-to-deploy machine learning models in one place.
+                Search and discover hundreds of trained, ready-to-deploy machine learning models in one place.
+            </p>
+        </div>
+        <div class="card-box-footer">
+            <a class="footer-text" href="javascript:void(0);" routerLink="/models-details">more</a>
+        </div>
+    </div>
+</ng-container>
+
+
+<ng-template #otherView>
+    <div class="card-rect-box">
+        <div class="card-left-side">
+            <img class="image" src="./../../../assets//images/logo.jfif" alt="Not Available">
+        </div>
+        <div class="card-content">
+            <div class="card-title">Model Name</div>
+            <p>Search and discover hundreds of trained, ready-to-deploy machine learning models in one place.</p>
+        </div>
+        <div class="card-right-side">
+            Votes 
+        </div>
+    </div>
+</ng-template>

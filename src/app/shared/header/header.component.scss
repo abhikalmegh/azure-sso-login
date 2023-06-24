@@ -1,0 +1,48 @@
+.section{
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+}
+
+.section  .top_navbar{
+    // background: rgb(7, 105, 185);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+
+}
+
+.section .top_navbar .hamburger{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section .top_navbar .hamburger a{
+    font-size: 28px;
+    color: #f4fbff;
+}
+
+.section .top_navbar .hamburger a:hover{
+    color: #a2ecff;
+}
+
+.profile-items{
+    display: flex;
+    width: 125px;
+    justify-content: space-between;
+    align-items : center;
+}
+
+.profile-label{
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #E44141;
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding-top: 7px;
+}

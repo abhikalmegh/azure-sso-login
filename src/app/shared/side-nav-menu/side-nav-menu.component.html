@@ -1,0 +1,16 @@
+<div class="profile">
+    <img src="./../../../assets/images/logo.jfif" alt="profile_picture">
+
+    <ul>
+        <li *ngFor="let menu of sideMenuItems">
+            <a id="{{menu.name}}" *ngIf="menu.route" href="javascript:void(0);" [routerLink]="menu.route" class="menu-item">
+                <span class="icon"><i ngClass="{{menu.icon}}"></i></span>
+                <span class="item">{{menu.name}}</span>
+            </a>
+            <a id="{{menu.name}}" *ngIf="!menu.route" href="http://localhost:4200/models" target="_blank" class="menu-item">
+                <span class="icon"><i ngClass="{{menu.icon}}"></i></span>
+                <span class="item">{{menu.name}}</span>
+            </a>
+        </li>
+    </ul>
+</div>
