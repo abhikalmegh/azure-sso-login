@@ -11,6 +11,6 @@ export class ModelDataService {
   constructor(private http : HttpClient) { }
 
    getModelCard(): Observable <ModelCard>{
-    return this.http.get<ModelCard>('json-data/models.json');
+    return this.http.get<ModelCard>('json-data/models.json'); 
   }
 }
